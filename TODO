@@ -1,6 +1,8 @@
 TODO:
-  ☐ コンポーネント・STATEを計画する
-  ☐ リダイレクトを計画する
+  ☐ WP多言語（https://www.itti.jp/web-design/choose-from-the-best-3-multilingual-plug-ins/）
+  ☐ Nuxt多言語
+  ☐ 同一URL（https://qiita.com/itouuuuuuuuu/items/f50d44dfa849011d86ab）
+  ☐ 別URL（https://qiita.com/matsumana07384/items/4b9731d46c3698b464d8#vue-i18n%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB）
 
 最後に対応:
   ☐ mixinsにまとめるスクリプトあるか検討
@@ -12,30 +14,3 @@ Memo:
   ■■■ 参考 ■■■
 
   ■■■ 反省など ■■■
-
-
-
-Todo:
-  ☐ Item
-  ✔ Item @done(20-09-25 23:07)
-  ✘ Item @cancelled(20-09-25 23:07)
-
-Todo2:
-  ☐ Item @critical
-  ☐ Item @high
-  ☐ Item @today
-  ☐ Item @low
-
-Todo3:
-  ☐ Item @3d
-  ☐ Item @3h
-  ☐ Item @2h
-  ☐ Item @3m
-
-Archive:
-
-
-使い方参考
-https://fereria.github.io/reincarnation_tech/98_Other/VSCode/vscode_task/
-
-Todo:Open Embedded　タスクリストの作成
