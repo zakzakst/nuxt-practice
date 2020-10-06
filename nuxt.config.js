@@ -27,6 +27,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    '@/plugins/vue-i18n'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -42,6 +43,7 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
     'nuxt-fontawesome',
+    ['cookie-universal-nuxt', { parseJSON: false }]
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
