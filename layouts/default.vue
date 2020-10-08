@@ -30,6 +30,7 @@ export default {
         {path: 'form-filter'},
         {path: 'item-filter'},
         {path: 'diagnosis'},
+        {path: 'more-load'},
       ]
     }
   }
