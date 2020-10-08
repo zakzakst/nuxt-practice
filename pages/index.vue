@@ -1,30 +1,59 @@
 <template>
-  <div class="container">
-    <p>{{ $t('title') }}</p>
-    <button class="button" @click="toggleLocale">切り替え</button>
+  <div class="content">
+    <h1>もっと見る</h1>
+    <div class="columns is-multiline">
+      <div v-for="(article, index) in articles" class="column is-one-third" :key="index">
+        <img :src="article.thumbnail" alt="">
+      </div>
+    </div>
+    <button v-if="hasNext" class="button" @click="load">もっと見る</button>
   </div>
 </template>
 
 <script>
+const loadNum = 3;
+
 export default {
-   asyncData({ app }) {
-    const locale = app.$cookies.get('locale') || 'ja';
+  data() {
     return {
-      isJa: locale === 'ja'
+      thumbnailList: {
+        count: 10,
+        articles: [
+          {thumbnail: 'https://picsum.photos/id/237/300/300'},
+          {thumbnail: 'https://picsum.photos/id/238/300/300'},
+          {thumbnail: 'https://picsum.photos/id/239/300/300'},
+          {thumbnail: 'https://picsum.photos/id/240/300/300'},
+          {thumbnail: 'https://picsum.photos/id/241/300/300'},
+          {thumbnail: 'https://picsum.photos/id/242/300/300'},
+          {thumbnail: 'https://picsum.photos/id/243/300/300'},
+          {thumbnail: 'https://picsum.photos/id/244/300/300'},
+          {thumbnail: 'https://picsum.photos/id/247/300/300'},
+          {thumbnail: 'https://picsum.photos/id/248/300/300'},
+        ]
+      },
+      // loadNum: 3,
+      articles: [],
+      hasNext: true,
     }
   },
   methods: {
-    toggleLocale() {
-      this.isJa = !this.isJa;
-      const locale = this.isJa ? 'ja' : 'en';
-      // localeをCookieに保存
-      this.$cookies.set('locale', locale, {
-        path: '/',
-        maxAge: 60 * 60 * 24 * 365
-      });
-      // 言語を切り替え
-      this.$i18n.locale = locale;
+    load() {
+      const currntNum = this.articles.length;
+      const nextNum = currntNum + loadNum;
+      const nextArticles = this.thumbnailList.articles.slice(currntNum, nextNum);
+      this.articles = this.articles.concat(nextArticles);
+      if (nextNum >= this.thumbnailList.count) {
+        this.hasNext = false;
+      }
     }
+  },
+  mounted() {
+    this.load();
+  },
+  computed: {
   }
 }
 </script>
+
+<style lang="scss">
+</style>
