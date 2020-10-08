@@ -28,6 +28,7 @@ export default {
         {path: 'vue-i18n'},
         {path: 'omikuji'},
         {path: 'form-filter'},
+        {path: 'item-filter'},
       ]
     }
   }
