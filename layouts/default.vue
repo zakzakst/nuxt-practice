@@ -27,6 +27,7 @@ export default {
       pageList: [
         {path: 'vue-i18n'},
         {path: 'omikuji'},
+        {path: 'form-filter'},
       ]
     }
   }
