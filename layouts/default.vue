@@ -29,6 +29,7 @@ export default {
         {path: 'omikuji'},
         {path: 'form-filter'},
         {path: 'item-filter'},
+        {path: 'diagnosis'},
       ]
     }
   }
