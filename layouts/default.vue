@@ -31,6 +31,7 @@ export default {
         {path: 'item-filter'},
         {path: 'diagnosis'},
         {path: 'more-load'},
+        {path: 'shopping-cart'},
       ]
     }
   }
