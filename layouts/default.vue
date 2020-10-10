@@ -35,6 +35,7 @@ export default {
         {path: 'lightbox'},
         {path: 'accordion'},
         {path: 'form-validation'},
+        {path: 'incremental-search'},
       ]
     }
   }
