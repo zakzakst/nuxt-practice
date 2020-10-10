@@ -2,13 +2,13 @@
   <div class="content">
     <h1>ストレス診断</h1>
     <div>
-      <transition name="fade">
+      <transition name="diagnosis-fade">
         <div v-show="status === 0">
           <p>あなたのストレス度をチェックします</p>
           <button class="button" @click="start">スタート</button>
         </div>
       </transition>
-      <transition name="fade" v-for="q in questions" :key="q.num">
+      <transition name="diagnosis-fade" v-for="q in questions" :key="q.num">
         <div v-show="q.num === status">
           <p><b>質問{{ q.num }}</b></p>
           <p>{{ q.sentence }}</p>
@@ -18,7 +18,7 @@
           </div>
         </div>
       </transition>
-      <transition name="fade">
+      <transition name="diagnosis-fade">
         <div v-show="isFinish">
           <p><b>診断結果</b></p>
           <p>{{ result.sentence }}</p>
@@ -86,20 +86,20 @@ export default {
 </script>
 
 <style lang="scss">
-.fade-enter-active {
+.diagnosis-fade-enter-active {
   width: 100%;
   transition: all .8s ease;
 }
-.fade-leave-active {
+.diagnosis-fade-leave-active {
   position: absolute;
   width: 100%;
   transition: all .8s ease;
   opacity: 0;
 }
-.fade-enter {
+.diagnosis-fade-enter {
   transform: translateX(-100%);
 }
-.fade-leave-to {
+.diagnosis-fade-leave-to {
   transform: translateX(100%);
 }
 </style>
