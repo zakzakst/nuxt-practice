@@ -33,6 +33,7 @@ export default {
         {path: 'more-load'},
         {path: 'shopping-cart'},
         {path: 'lightbox'},
+        {path: 'accordion'},
       ]
     }
   }
