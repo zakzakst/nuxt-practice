@@ -34,6 +34,7 @@ export default {
         {path: 'shopping-cart'},
         {path: 'lightbox'},
         {path: 'accordion'},
+        {path: 'form-validation'},
       ]
     }
   }
