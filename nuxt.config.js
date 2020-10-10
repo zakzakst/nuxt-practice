@@ -15,7 +15,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      {
+        src: 'https://yubinbango.github.io/yubinbango/yubinbango.js'
+      }
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
