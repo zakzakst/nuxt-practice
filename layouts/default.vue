@@ -32,6 +32,7 @@ export default {
         {path: 'diagnosis'},
         {path: 'more-load'},
         {path: 'shopping-cart'},
+        {path: 'lightbox'},
       ]
     }
   }
