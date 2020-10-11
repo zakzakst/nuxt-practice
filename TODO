@@ -1,6 +1,6 @@
 TODO:
   ☐ WP多言語（https://www.itti.jp/web-design/choose-from-the-best-3-multilingual-plug-ins/）→今回は使わない（自分で英語入力のカスタムフィールド作る）
-  ☐ google翻訳API（https://pisuke-code.com/js-usage-of-google-trans-api/、https://developer.a-blogcms.jp/document/javascript/google-translate-api.html、https://www.npmjs.com/package/google-translate-api）
+  ☐ google翻訳API（https://pisuke-code.com/js-usage-of-google-trans-api/、https://developer.a-blogcms.jp/document/javascript/google-translate-api.html、https://www.npmjs.com/package/google-translate-api、https://stackoverrun.com/ja/q/2153819）
   ☐ Nuxt多言語：同一URL（https://qiita.com/itouuuuuuuuu/items/f50d44dfa849011d86ab）
   ☐ Nuxt多言語：別URL（https://qiita.com/matsumana07384/items/4b9731d46c3698b464d8#vue-i18n%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB）
   ☐ SVGで地図上にマッピング
